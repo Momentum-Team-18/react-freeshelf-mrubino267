@@ -1,0 +1,33 @@
+<div>{book.coverImageUrl}</div>
+
+React.createElement("div", {
+    className: "cover",
+        style: {
+            backgroundImage: `url(${bookDate.coverImageUrl})` }
+    }
+
+/* /* <div className="inner">
+                            {
+                                bookData && bookData.map( book => {
+                                    return(
+                                        <div className="pic" key={ book.coverImageUrl }>
+                                            <img src={ book.coverImageUrl }
+                                            
+                                            {book.coverImageUrl}
+                                           
+                                            </div> */
+
+
+function Picture() {
+    return (
+        bookData && bookData.map(image => 
+            <img src={ bookData.coverImageUrl }></img>
+            )
+    )
+}
+
+const image = (imageName) => {
+                            return require (bookData.coverImageUrl)
+                        }
+
+                        img src={bookData.coverImageUrl} alt=""/>
