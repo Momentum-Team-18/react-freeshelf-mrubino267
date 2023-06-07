@@ -1,13 +1,24 @@
 import './App.css'
 import bookData from './book-data.json'
+export default App
 
 function App() {
-  return (
-    <div>
-      <h1>Freeshelf</h1>
-      {/* Use bookData to show books on the page*/}
-    </div>
-  )
-}
 
-export default App
+    return (
+        <div>
+            <h1>Freeshelf</h1>
+            <ul>
+                {bookData.map((book) => (
+                <li>
+                        <div>{book.title}</div>
+                        <div>{book.author}</div>
+                        <div>{book.shortDescription}</div>
+                        <div>{book.coverImageUrl}</div>
+                        
+    }
+                </li>
+            ))}
+            </ul>
+        </div>
+    );
+}
